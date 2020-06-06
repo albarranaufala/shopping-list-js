@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/fontawesome-free/css/all.css">
+    <title>Shopping List</title>
+</head>
+
+<body>
+    <header class="py-2">
+        <h2 class="text-center">Shopping List</h2>
+    </header>
+    <div class="container py-3">
+        <form id="form" class="form-container mt-5">
+            <label for="input-item">Add an item</label>
+            <div class="form-inline d-flex">
+                <input type="text" class="form-control mb-2 flex-1 roundless" id="input-item" placeholder="Beras...">
+                <button type="submit" class="btn btn-dark roundless ml-2 mb-2">Add To List</button>
+            </div>
+        </form>
+        <div class="table-container mt-5">
+            <table class="w-100">
+                <thead>
+                    <tr>
+                        <td>Item</td>
+                        <td class="text-center">Quantity</td>
+                        <td class="text-center">Aksi</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+
+</html>

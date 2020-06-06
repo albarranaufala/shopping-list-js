@@ -1,0 +1,48 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 32;
+}
+.form-container{
+    max-width: 500px;
+    margin: auto;
+}
+.flex-1{
+    flex: 1;
+}
+.roundless{
+    border-radius: 0;
+}
+.table-container{
+    max-width: 700px;
+    margin: auto;
+}
+.font-size-32{
+    font-size: 32px;
+}
+td{
+    padding: 1.5rem;
+}
+thead tr{
+    border-bottom: 1px solid #424242;
+}
+tbody {
+    border-bottom: 1px solid #424242;
+}
+.delete{
+    color: #f5425d;
+    cursor: pointer;
+    transition: ease-in 0.25s;
+}
+.delete:hover{
+    color: #cf364d;
+}
+.minus, .plus{
+    cursor: pointer;
+}
+header{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top:0;
+}

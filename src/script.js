@@ -10,13 +10,15 @@ document.getElementById('form').addEventListener('submit', function(e){
     e.preventDefault()
 
     let newItem = inputItem.value
-    list.push({
-        name: newItem,
-        qty: 1
-    })
-    renderList(list)
-    inputItem.blur()
-    inputItem.value = ''
+    if(newItem){
+        list.push({
+            name: newItem,
+            qty: 1
+        })
+        renderList(list)
+        inputItem.blur()
+        inputItem.value = ''
+    }
 })
 
 function renderList(list){

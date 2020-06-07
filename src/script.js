@@ -27,14 +27,27 @@ function renderList(list){
         script += createRow(item, index)
     });
     if(!list.length){
-        script = '<tr><td colspan="3" class="text-center">Kosong</td></tr>'
+        script = `  <tr>
+                        <td colspan="3" class="text-center">
+                            Kosong
+                        </td>
+                    </tr>`
     }
     tbody.innerHTML = script
 }
 
 function createRow(item, index){
-    let script = '<tr><td>'+item.name+'</td><td class="text-center"><i onclick="decreaseQty('+index+')" class="fas fa-minus p-3 minus"></i>'+item.qty+'<i onclick="increaseQty('+index+')" class="fas fa-plus p-3 plus"></i></td><td class="text-center"><i onclick="deleteItem('+index+')" class="fas fa-trash delete p-3"></i></td></tr>'
-
+    let script = `  <tr>
+                        <td>'+item.name+'</td>
+                        <td class="text-center">
+                            <i onclick="decreaseQty('+index+')" class="fas fa-minus p-3 minus"></i>`
+                            +item.qty+
+                            `<i onclick="increaseQty('+index+')" class="fas fa-plus p-3 plus"></i>
+                        </td>
+                        <td class="text-center">
+                            <i onclick="deleteItem('+index+')" class="fas fa-trash delete p-3"></i>
+                        </td>
+                    </tr>`
     return script
 }
 

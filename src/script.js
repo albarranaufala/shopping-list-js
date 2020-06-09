@@ -38,14 +38,12 @@ function renderList(list){
 
 function createRow(item, index){
     let script = `  <tr>
-                        <td>'+item.name+'</td>
+                        <td>${item.name}</td>
                         <td class="text-center">
-                            <i onclick="decreaseQty('+index+')" class="fas fa-minus p-3 minus"></i>`
-                            +item.qty+
-                            `<i onclick="increaseQty('+index+')" class="fas fa-plus p-3 plus"></i>
+                            <i onclick="decreaseQty(${index})" class="fas fa-minus p-3 minus"></i>${item.qty}<i onclick="increaseQty(${index})" class="fas fa-plus p-3 plus"></i>
                         </td>
                         <td class="text-center">
-                            <i onclick="deleteItem('+index+')" class="fas fa-trash delete p-3"></i>
+                            <i onclick="deleteItem(${index})" class="fas fa-trash delete p-3"></i>
                         </td>
                     </tr>`
     return script
